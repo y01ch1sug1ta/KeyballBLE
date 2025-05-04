@@ -64,7 +64,7 @@
 &kp LCTRL           &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE  &lt 2 TAB      &lt 3 BACKSPACE    &kp RIGHT_COMMAND                             &lt 6 ESC
             >;
 
-            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&ROTATE SCRL_UP SCRL_DOWN>;
         };
 
         FUNCTION {
@@ -74,23 +74,27 @@
 &trans             &trans           &trans                &trans                &trans       &trans      &trans  &kp COLON         &kp DOUBLE_QUOTES  &kp COMMA      &kp PERIOD            &kp BACKSLASH
 &trans             &trans           &trans                &trans                &trans       &trans      &trans  &trans                                                                    &trans
             >;
+
+            sensor-bindings = <&ROTATE SCRL_LEFT SCRL_RIGHT>;
         };
 
         NUM {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                          &kp N1   &kp N2  &kp N3  &kp N0     &trans
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans     &kp N4   &kp N5  &kp N6  &kp PLUS   &kp MINUS
-&kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans     &kp N7   &kp N8  &kp N9  &kp MINUS  &kp FSLH
-&trans   &trans   &trans  &trans  &trans   &trans      &kp MINUS  &kp DOT                             &trans
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6   &kp N7  &kp N8   &kp N9   &kp N0
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &kp F7     &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans   &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp MINUS  &kp DOT                            &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &kp UP    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &kp PAGE_UP   &trans    &kp UP    &trans     &kp PAGE_DOWN
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT)  &trans    &trans    &trans     &kp LA(RIGHT)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -103,6 +107,8 @@
 &trans    &trans     &trans     &trans     &trans    &mkp RCLK      &trans  &trans    &trans     &trans     &trans     &trans
 &trans    &trans     &trans     &trans     &trans    &trans         &trans  &trans                                     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
         SCROLL {
