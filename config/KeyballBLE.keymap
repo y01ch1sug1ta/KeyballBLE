@@ -97,18 +97,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         MOUSE {
             bindings = <
-&trans    &trans     &trans     &trans     &trans                           &trans    &trans     &trans     &trans     &trans
-&mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &mkp LCLK      &trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5
-&trans    &trans     &trans     &trans     &trans    &mkp RCLK      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans     &trans     &trans     &trans    &trans         &trans  &trans                                     &trans
+&kp LG(KP_MINUS)  &trans     &trans     &trans     &kp LG(KP_PLUS)                         &kp LG(KP_MINUS)  &trans     &trans     &trans     &kp LG(KP_PLUS)
+&mkp MB4          &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5         &mkp LCLK      &trans  &mkp MB4          &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5
+&kp LS(LC(TAB))   &trans     &trans     &trans     &kp LC(TAB)      &mkp RCLK      &trans  &kp LS(LC(TAB))   &trans     &trans     &trans     &kp LC(TAB)
+&trans            &trans     &trans     &trans     &trans           &trans         &trans  &trans                                             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(KP_PLUS) LC(KP_MINUS)>;
+            sensor-bindings = <&ROTATE SCRL_UP SCRL_DOWN>;
         };
 
         SCROLL {
