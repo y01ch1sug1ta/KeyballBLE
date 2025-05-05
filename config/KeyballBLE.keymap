@@ -102,10 +102,10 @@
 
         MOUSE {
             bindings = <
-&trans        &trans  &trans  &kp LS(NUMBER_4)  &kp LC(UP_ARROW)                      &trans    &kp LG(KP_MINUS)  &trans     &kp LG(KP_PLUS)  &trans
-&kp LC(LEFT)  &trans  &trans  &trans            &kp LC(RIGHT)     &trans      &trans  &mkp MB4  &mkp LCLK         &mkp MCLK  &mkp RCLK        &mkp MB5
-&trans        &trans  &trans  &trans            &trans            &trans      &trans  &trans    &kp LS(LC(TAB))   &trans     &kp LC(TAB)      &trans
-&trans        &trans  &trans  &trans            &trans            &trans      &trans  &trans                                                  &trans
+&trans  &trans        &kp LC(UP_ARROW)  &kp LG(L)      &trans                      &trans    &kp LG(KP_MINUS)  &trans     &kp LG(KP_PLUS)  &trans
+&trans  &kp LC(LEFT)  &kp LC(DOWN)      &kp LC(RIGHT)  &trans  &trans      &trans  &mkp MB4  &mkp LCLK         &mkp MCLK  &mkp RCLK        &mkp MB5
+&trans  &trans        &trans            &trans         &trans  &trans      &trans  &trans    &kp LS(LC(TAB))   &trans     &kp LC(TAB)      &trans
+&trans  &trans        &trans            &trans         &trans  &trans      &trans  &trans                                                  &trans
             >;
 
             sensor-bindings = <&ROTATE SCRL_UP SCRL_DOWN>;
