@@ -102,10 +102,10 @@
 
         MOUSE {
             bindings = <
-&trans                                 &trans                                  &kp LA(LC(RETURN))     &trans             &trans                                       &kp LG(KP_MINUS)  &kp LG(KP_MINUS)  &trans     &kp LG(KP_PLUS)  &kp LG(KP_PLUS)
-&trans                                 &kp LA(LC(LEFT))                        &kp LA(LC(BACKSPACE))  &kp LA(LC(RIGHT))  &trans  &trans      &kp LS(LG(KP_NUMBER_4))  &mkp MB4          &mkp LCLK         &mkp MCLK  &mkp RCLK        &mkp MB5
-&trans                                 &trans                                  &trans                 &trans             &trans  &trans      &trans                   &kp LS(LC(TAB))   &kp LS(LC(TAB))   &trans     &kp LC(TAB)      &kp LC(TAB)
-&kp LS(C_AC_DESKTOP_SHOW_ALL_WINDOWS)  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &trans                 &trans             &trans  &trans      &trans                   &trans                                                          &trans
+&trans        &trans            &kp LA(LC(RETURN))     &kp LS(NUMBER_4)   &kp LC(UP_ARROW)                      &kp LG(KP_MINUS)  &kp LG(KP_MINUS)  &trans     &kp LG(KP_PLUS)  &kp LG(KP_PLUS)
+&kp LC(LEFT)  &kp LA(LC(LEFT))  &kp LA(LC(BACKSPACE))  &kp LA(LC(RIGHT))  &kp LC(RIGHT)     &trans      &trans  &mkp MB4          &mkp LCLK         &mkp MCLK  &mkp RCLK        &mkp MB5
+&trans        &trans            &trans                 &trans             &trans            &trans      &trans  &kp LS(LC(TAB))   &kp LS(LC(TAB))   &trans     &kp LC(TAB)      &kp LC(TAB)
+&trans        &trans            &trans                 &trans             &trans            &trans      &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&ROTATE SCRL_UP SCRL_DOWN>;
